@@ -4,9 +4,7 @@ export default function ({ ticket }) {
   return (
     <div className="ticket">
       <p>Ticket </p>
-      {ticket.map((num, idx) => {
-        <TicketNum num={num} key={idx} />;
-      })}
+      <TicketNum num={ticket} />
     </div>
   );
 }

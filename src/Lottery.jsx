@@ -14,6 +14,7 @@ export default function Lottery({ n = 3, winningSum = 15 }) {
       <h1>Lottery Game!</h1>
 
       <Ticket ticket={ticket} />
+      {console.log(ticket)}
       <button onClick={buyTicket} className="btn">
         Buy Tickect
       </button>
